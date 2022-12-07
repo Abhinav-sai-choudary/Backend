@@ -1,14 +1,380 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+  <title>Abhinav Sai Choudary</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>    
+  .menu {
+  background-color: rgb(234 147 167 / 88%);
+  height: 70px;
+  border-radius: 10px;
+   width: 1050px; 
+  margin-bottom: 10px;
+  padding-right: 540px;
+}
+
+a{
+
+  float:right;
+  display: block;
+  color:black;
+  padding: 27px 20px;
+  font-size: 13px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  border-radius: 25px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, #menu-item {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#contact{
+  padding-right: 40px;
+}
+
+.search-menu{
+
+  float:left;
+  display: block;
+  padding-top: 22px;
+  
+}
+.search{
+  width:320px;
+  text-align:end;
+  font-style: italic;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  padding:5px;
+  padding-right:10px;
+  border-radius: 50px;
+  border-style: groove;
+  border:1111px;
+  border-color: black;
+}
+.search-image{
+  float:left;
+  display:block;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+#image{
+  padding:10px;
+}
+
+#menu-icons{
+  padding-right: 3px;
+}
+.border{
+  background-color: black;
+  min-height: 5px;
+  margin-bottom:10px;
+  border-radius:10px;
+}
+
+.row{
+  overflow:hidden;
+  margin-bottom:2px;
+  border-radius:20px;
+}
+.column1{
+  float:left;
+  width:500px;
+  height:1173px;
+  margin-right:5px;
+  border-radius: 20px;
+  background-color: #4db781;
+}
+.column2{
+  background-color: rgb(216, 216, 214);
+  float:right;
+  width:950px;
+  /*height:1173px;*/
+  border-radius: 20px;
+}
+
+.column3 {
+  background-color: rgb(216, 216, 214);
+  float: left;
+  width: 450px;
+  /*height: 1173px;*/
+  border-radius: 20px;
+}
+.me {
+  width: 425px;
+  height: 420px;
+  border-radius: 20px;
+}
+.profile{
+  padding-left: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.content{
+
+  padding-left:30px;
+  padding-top:5px;
+  padding-right:20px;
+  padding-bottom: -5px;
+}
+#journal{
+  font-size: 20px;
+  float:none;
+}
+
+h1{
+  font-size: 20px;
+  font-family: 'Comfortaa', cursive;
+  font-weight:lighter;
+}
+p, li {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  font-family: 'Comfortaa', cursive;
+}
+
+#skills{
+  padding-bottom: 15px;
+}
+
+#radio{
+  width:24px;
+}
+.radio-icons{
+  display:inline-block;
+  height:45px;
+}
+.lists{
+ width: 160px;
+ height:45px;
+ padding-top:0px;
+ float:left;
+ text-align:center;
+}
+.ricons{
+  width:160px;
+  float:right;
+  height:45px;
+}
+#radio{
+  padding-top: 21px;
+}
+#italy{
+  font-style: italic;
+}
+
+.footer {
+  border-radius: 60px;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+  width: 627px;
+  float: right;
+  margin-right: 430px;
+}
+#footer-icons{
+  float:none;
+  font-size: 20px;
+  color:rgb(64, 226, 172);
+  display:inline-block;
+}
+
+#mycontact {
+  padding-top: 30px;
+  color: rgb(64, 226, 172);
+  font-family: 'Comfortaa', cursive;
+  
+}
+
+img {
+  border-radius: 50%;
+}
+
+  </style>
 </head>
-<body>
+<body style="background-color:#3f5053b8;">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
     
-    <h1>This is Home Page</h1> 
+    <div class="collapse navbar-collapse"  >
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#MyProfile">MyProfile</a></li>
+        <li class="active"><a href="#Experience">Experience</a></li>
+        <li class="active"><a href="#Projects">Projects</a></li>
+        <li class="active"><a href="#Moreinfo">Moreinfo</a></li>
+      </ul>
+    
+    
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <p><a href="#"><center>My Profile </center> </a></p>
+        <img src="abhi.jpeg" class="img-square" height="170" width="170" >
+
+        <p><center>Abhinav Sai Choudary</center></p>
+    <p><center>chilukuriabhinavsai@gmail.com</center></p>
+      </div>
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row bg-secondary      ">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body" id="MyProfile">
+              <div>
+                <h1>About</h1>
+                <p>
+                    This is Abhinav currently pursuing my masters in computer science in University of New Haven.
+                </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Education</p>
+           <!-- <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar"> -->
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            
+            <ul>
+            </ul>
+                <li>  Masters in Computer Science  </li>
+                <p>     University of New Haven...............2021-2023 </p>
+              
+                <li>  Bachelors in Electronics</li>
+                <p>     Vel Tech University.............................2017-2021</p>
+              
+             
+                <li>  High School</li>
+                <p>     Matrix IIT Academy...........................2015-2017</p>
+                
+
+              </ul>
+          </ul>  </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well" id="Experience">
+           <p>Experience</p>
+           <!-- <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar"> -->
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>
+              There is no prior job experience.
+          </p> 
+         </div>
+        </div>
+      </div>
+      <div class="row">
+        
+        
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well"  id="Projects">
+           <p>Projects</p>
+           <!-- <img src="bandmember.jpg" class="img-circle" height="55" width="55" alt="Avatar"> -->
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <ul>
+              <li>
+                  <p>
+                    AI Based Chat Bot System for Health Related Information.
+                  </p>
+              </li>
+              <li>
+                  <p>
+                    Scalable Web Server.
+                  </p>
+              </li>
+              <li>
+                <p>
+                    Car Racing Using Python.
+                </p>
+              </li>
+          </ul>
+</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Blog</p>
+           <!-- <img src="bandmember.jpg" class="img-circle" height="55" width="55" alt="Avatar"> -->
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>
+              I am intrested to write blogs on stock market related to investment.
+           </p>
+</div>
+        </div>
+      </div>
+ 
+     
+      
+    </div>
+    
+  </div>
+</div>
+
+
 
 </body>
+<center>
+<div class="footer" id="Moreinfo">
+    <div class="socialicons">
+        <a href="https://twitter.com/UNewHaven" id="footer-icons"><i class="bi bi-twitter"></i></a>
+        
+        <a href="https://www.linkedin.com/school/university-of-new-haven/" id="footer-icons"><i class="bi bi-linkedin"></i></a>
+        
+        <a href="https://github.com/" id="footer-icons"><i class="bi bi-github"></i></a>
+    </center>
+              
+    </div>      
+</div>
 </html>
+  
